@@ -6,7 +6,12 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\sprite0</sprite>
+    <sprites name="Mobs">
+      <sprite>sprites\spr_Slime</sprite>
+    </sprites>
+    <sprites name="Items">
+      <sprite>sprites\spr_Sword1</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
