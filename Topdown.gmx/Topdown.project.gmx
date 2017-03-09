@@ -20,6 +20,7 @@
         <sprite>sprites\spr_wall_d</sprite>
       </sprites>
     </sprites>
+    <sprites name="UI"/>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
