@@ -32,6 +32,9 @@
         <object>objects\obj_wall_d</object>
       </objects>
     </objects>
+    <objects name="Enemy">
+      <object>objects\obj_slime_g</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_sample</room>
