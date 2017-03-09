@@ -20,7 +20,13 @@
         <sprite>sprites\spr_wall_d</sprite>
       </sprites>
     </sprites>
+<<<<<<< HEAD
     <sprites name="UI"/>
+=======
+    <sprites name="Treasures">
+      <sprite>sprites\spr_Chest1</sprite>
+    </sprites>
+>>>>>>> origin/master
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
