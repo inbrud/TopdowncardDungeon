@@ -7,14 +7,35 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="Mobs">
-      <sprite>sprites\spr_Slime</sprite>
+      <sprite>sprites\spr_slime_g</sprite>
     </sprites>
     <sprites name="Items">
-      <sprite>sprites\spr_Sword1</sprite>
+      <sprite>sprites\spr_sword1</sprite>
+    </sprites>
+    <sprites name="Player">
+      <sprite>sprites\spr_player</sprite>
+    </sprites>
+    <sprites name="Terrain">
+      <sprites name="Walls">
+        <sprite>sprites\spr_wall_d</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <objects name="objects">
+    <objects name="Player">
+      <object>objects\obj_player</object>
+    </objects>
+    <objects name="Terrain">
+      <objects name="Wall">
+        <object>objects\obj_wall_d</object>
+      </objects>
+    </objects>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_sample</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
