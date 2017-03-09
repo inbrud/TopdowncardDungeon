@@ -20,6 +20,9 @@
         <sprite>sprites\spr_wall_d</sprite>
       </sprites>
     </sprites>
+    <sprites name="Treasures">
+      <sprite>sprites\spr_Chest1</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
