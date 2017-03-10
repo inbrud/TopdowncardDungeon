@@ -21,10 +21,10 @@
       </sprites>
     </sprites>
     <sprites name="Treasures">
-      <sprite>sprites\spr_Chest1</sprite>
+      <sprite>sprites\spr_chest1</sprite>
     </sprites>
     <sprites name="UI">
-      <sprite>sprites\spr_UI_Heart</sprite>
+      <sprite>sprites\spr_UI_heart</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
