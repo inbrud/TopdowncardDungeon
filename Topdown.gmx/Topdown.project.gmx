@@ -27,6 +27,7 @@
       <sprite>sprites\spr_UI_heart</sprite>
     </sprites>
     <sprite>sprites\spr_gold</sprite>
+    <sprite>sprites\spr_fire</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -43,6 +44,7 @@
       <object>objects\obj_slime_g</object>
     </objects>
     <object>objects\Global</object>
+    <object>objects\obj_fire</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_sample</room>
