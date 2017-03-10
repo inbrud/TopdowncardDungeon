@@ -13,7 +13,7 @@
       <sprite>sprites\spr_sword1</sprite>
     </sprites>
     <sprites name="Player">
-      <sprite>sprites\spr_player</sprite>
+      <sprite>sprites\spr_Player</sprite>
     </sprites>
     <sprites name="Terrain">
       <sprites name="Walls">
@@ -22,6 +22,9 @@
     </sprites>
     <sprites name="Treasures">
       <sprite>sprites\spr_Chest1</sprite>
+    </sprites>
+    <sprites name="UI">
+      <sprite>sprites\spr_UIBottom</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
