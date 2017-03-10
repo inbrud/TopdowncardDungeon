@@ -23,13 +23,8 @@
     <sprites name="Treasures">
       <sprite>sprites\spr_Chest1</sprite>
     </sprites>
-<<<<<<< HEAD
     <sprites name="UI">
-      <sprite>sprites\spr_UIBottom</sprite>
-=======
-    <sprites name="Loot">
-      <sprite>sprites\spr_gold</sprite>
->>>>>>> origin/master
+      <sprite>sprites\spr_UI_Heart</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -46,10 +41,6 @@
     <objects name="Enemy">
       <object>objects\obj_slime_g</object>
     </objects>
-    <objects name="items">
-      <object>objects\obj_gold</object>
-    </objects>
-    <object>objects\Global</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_sample</room>
