@@ -30,7 +30,7 @@
 //States
 attack = false;
 hp = 100;
-
+inv_frames = false;
 //Player stats
 attack_speed = 50;
 experience = 0;
@@ -53,6 +53,29 @@ view_hview[0]=height;
 view_wport[0]=width;
 view_hport[0]=height;
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>inv_frames = false
 </string>
           </argument>
         </arguments>
@@ -191,6 +214,35 @@ if keyboard_check_pressed(ord("L"))
 if keyboard_check(ord("O"))
 {
     instance_create(x,y,debug_controller);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_slime_g">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///col enemy
+if inv_frames = false
+{
+    inv_frames = true;
+    hp -= 10
+    alarm[1]=30
 }
 </string>
           </argument>

@@ -39,6 +39,9 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_aggro.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\font_debug</font>
   </fonts>
@@ -58,10 +61,10 @@
       <object>objects\obj_slime_g</object>
     </objects>
     <object>objects\obj_fire</object>
-    <object>objects\debug_controller</object>
-    <object>objects\enemymod_controller</object>
     <objects name="Controllers">
       <object>objects\cont_main</object>
+      <object>objects\enemymod_controller</object>
+      <object>objects\debug_controller</object>
     </objects>
   </objects>
   <rooms name="rooms">
