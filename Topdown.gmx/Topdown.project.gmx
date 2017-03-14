@@ -21,15 +21,20 @@
       </sprites>
     </sprites>
     <sprites name="Treasures">
-      <sprite>sprites\spr_Chest1</sprite>
+      <sprite>sprites\spr_chest1</sprite>
     </sprites>
     <sprites name="UI">
       <sprite>sprites\spr_UI_heart</sprite>
       <sprite>sprites\spr_UI_healthbar</sprite>
     </sprites>
+    <sprite>sprites\spr_gold</sprite>
+    <sprite>sprites\spr_fire</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\font_debug</font>
+  </fonts>
   <objects name="objects">
     <objects name="Player">
       <object>objects\obj_player</object>
@@ -42,6 +47,9 @@
     <objects name="Enemy">
       <object>objects\obj_slime_g</object>
     </objects>
+    <object>objects\obj_fire</object>
+    <object>objects\debug_controller</object>
+    <object>objects\enemymod_controller</object>
     <objects name="Controllers">
       <object>objects\cont_main</object>
     </objects>
