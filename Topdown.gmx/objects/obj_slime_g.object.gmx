@@ -117,7 +117,7 @@ mp_potential_step(obj_player.x,obj_player.y,enemybehave,false);
 //movement behave
 if can_move=false
 {
-    enemybehave = 2;
+    enemybehave = 1;
     alarm[0]=120;
     alarm[1]=60;
     can_move = true;
@@ -150,6 +150,11 @@ if hp &lt;= 0
 {
     instance_destroy();
     obj_player.experience+=10;
+    var i, droprate
+    droprate = random(5)
+    for (i=0; i &lt; droprate; i++){
+        instance_create(x,y,obj_gold)
+        }
 }
 </string>
           </argument>
