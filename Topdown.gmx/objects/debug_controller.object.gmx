@@ -52,6 +52,7 @@ draw_set_font(font_debug);
 draw_text(view_xview[0]+10, view_yview[0]+10, "EXP: "+string(obj_player.experience));
 draw_text(view_xview[0]+10, view_yview[0]+20, "Player HP: "+string(obj_player.hp));
 draw_text(view_xview[0]+10, view_yview[0]+30, "Slime HP: "+string(obj_slime_g.hp));
+draw_text(view_xview[0]+10, view_yview[0]+50, "Dir: "+string(obj_slime_g.can_move));
 </string>
           </argument>
         </arguments>
