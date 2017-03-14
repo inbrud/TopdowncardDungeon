@@ -25,8 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///crate values
-image_speed = 0.35;
+            <string>///var
+
+//depth
+depth = -y
+
+//animate
+
+image_speed = 0.30;
+
 </string>
           </argument>
         </arguments>
