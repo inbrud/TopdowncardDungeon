@@ -33,8 +33,8 @@ vsp = 0;
 movespeed = 3;
 
 view_visible[0]=true; //make view visible
-width=1280; //width of desired view
-height=800; //height of desired view
+width=640; //width of desired view
+height=480; //height of desired view
 
 //adjusting view width and height, as well as scale (port)
 view_wview[0]=width;
