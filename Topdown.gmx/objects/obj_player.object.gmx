@@ -29,29 +29,29 @@
 
 //States
 attack = false;
-
+hp = 100;
 
 //Player stats
 attack_speed = 50;
+experience = 0;
 
 ///movement variables
 hsp = 0;
 vsp = 0;
 movespeed = 3;
 
+
+//inventory
+
 view_visible[0]=true; //make view visible
-width=960; //width of desired view
-height=720; //height of desired view
+width=640; //width of desired view
+height=480; //height of desired view
 
 //adjusting view width and height, as well as scale (port)
 view_wview[0]=width;
 view_hview[0]=height;
 view_wport[0]=width;
 view_hport[0]=height;
-
-//inventory
-
-
 
 </string>
           </argument>
@@ -159,6 +159,8 @@ if(place_meeting(x+hsp, y+vsp, obj_wall_d))
 //snap view x and y positions to object's coordinates, subtracting one-half the width and height to center it
 view_xview[0]=x-(view_wview[0]/2);
 view_yview[0]=y-(view_hview[0]/2);
+
+
 </string>
           </argument>
         </arguments>
@@ -186,7 +188,10 @@ if keyboard_check_pressed(ord("L"))
 {
     window_set_size(800, 1280);
 }
-
+if keyboard_check(ord("O"))
+{
+    instance_create(x,y,debug_controller);
+}
 </string>
           </argument>
         </arguments>

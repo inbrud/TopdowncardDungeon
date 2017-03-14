@@ -31,6 +31,9 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\font_debug</font>
+  </fonts>
   <objects name="objects">
     <objects name="Player">
       <object>objects\obj_player</object>
@@ -43,8 +46,9 @@
     <objects name="Enemy">
       <object>objects\obj_slime_g</object>
     </objects>
-    <object>objects\Global</object>
     <object>objects\obj_fire</object>
+    <object>objects\debug_controller</object>
+    <object>objects\enemymod_controller</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_sample</room>
