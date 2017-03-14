@@ -19,13 +19,20 @@
       <sprites name="Walls">
         <sprite>sprites\spr_wall_d</sprite>
       </sprites>
+      <sprites name="Floor">
+        <sprite>sprites\spr_grass</sprite>
+      </sprites>
     </sprites>
     <sprites name="Treasures">
       <sprite>sprites\spr_chest1</sprite>
+      <sprite>sprites\spr_goldbag</sprite>
     </sprites>
     <sprites name="UI">
       <sprite>sprites\spr_UI_heart</sprite>
       <sprite>sprites\spr_UI_healthbar</sprite>
+      <sprite>sprites\spr_UI_bgtopleft</sprite>
+      <sprite>sprites\spr_UI_healthbarinner</sprite>
+      <sprite>sprites\spr_UI_healthbarborder</sprite>
     </sprites>
     <sprite>sprites\spr_gold</sprite>
     <sprite>sprites\spr_fire</sprite>
@@ -45,6 +52,9 @@
     <objects name="Terrain">
       <objects name="Wall">
         <object>objects\obj_wall_d</object>
+      </objects>
+      <objects name="Floor">
+        <object>objects\obj_grass</object>
       </objects>
     </objects>
     <objects name="Enemy">
