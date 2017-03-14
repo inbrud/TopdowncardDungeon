@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -28,8 +28,14 @@
             <string>///Draw UI
 
 //Draw BG
-draw_sprite(spr_UI_heart,1,30,30);
-draw_sprite(spr_UI_healthbar,1,150,30);
+draw_sprite(spr_UI_bgtopleft,1,1,1);
+draw_sprite(spr_UI_healthbar,1,46,34);
+draw_sprite_ext(spr_UI_healthbarinner,1,46,34,obj_player.hp/100,1,0,c_white,1);
+draw_sprite(spr_UI_healthbarborder,1,15,15);
+draw_sprite(spr_goldbag,1,270,20);
+
+//Draw Text
+draw_text(285,13,"x");
 </string>
           </argument>
         </arguments>
