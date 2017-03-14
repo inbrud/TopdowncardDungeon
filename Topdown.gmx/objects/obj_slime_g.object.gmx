@@ -3,7 +3,7 @@
   <spriteName>spr_slime_g</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-11</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -150,6 +150,10 @@ if hp &lt;= 0
 {
     instance_destroy();
     obj_player.experience+=10;
+    
+    
+    
+    audio_play_sound(snd_bop,10,false);
 }
 </string>
           </argument>
