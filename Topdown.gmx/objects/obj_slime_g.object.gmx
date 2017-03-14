@@ -112,7 +112,7 @@ hsp = 0;
             <string>///enemy Ai
 
 //head towards player
-mp_potential_step(obj_player.x,obj_player.y,enemybehave,true);
+mp_potential_step(obj_player.x,obj_player.y,enemybehave,false);
 
 //movement behave
 if can_move=false
