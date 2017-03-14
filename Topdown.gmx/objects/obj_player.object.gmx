@@ -43,6 +43,8 @@ movespeed = 3;
 
 //inventory
 
+gold = 0;
+
 view_visible[0]=true; //make view visible
 width=640; //width of desired view
 height=480; //height of desired view
