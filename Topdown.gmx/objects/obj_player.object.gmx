@@ -3,7 +3,7 @@
   <spriteName>spr_player</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-11</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -27,14 +27,29 @@
             <kind>1</kind>
             <string>///Initialize variables
 
+//States
+attack = false;
+hp = 100;
+inv_frames = false;
+//Player stats
+attack_speed = 50;
+experience = 0;
+
+//unique stats
+proj_count = 1;
+
 ///movement variables
 hsp = 0;
 vsp = 0;
 movespeed = 3;
 
+
+//inventory
+gold = 0;
+
 view_visible[0]=true; //make view visible
-width=1280; //width of desired view
-height=800; //height of desired view
+width=640; //width of desired view
+height=480; //height of desired view
 
 //adjusting view width and height, as well as scale (port)
 view_wview[0]=width;
@@ -42,10 +57,52 @@ view_hview[0]=height;
 view_wport[0]=width;
 view_hport[0]=height;
 
-//inventory
-
-
-
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>inv_frames = false
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>attack=false;
 </string>
           </argument>
         </arguments>
@@ -68,7 +125,9 @@ view_hport[0]=height;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Get player input
+            <string>///Movement and collision
+
+// Get player input
 
 key_right = keyboard_check(ord("D"));
 key_left = -keyboard_check(ord("A"));
@@ -127,6 +186,8 @@ if(place_meeting(x+hsp, y+vsp, obj_wall_d))
 //snap view x and y positions to object's coordinates, subtracting one-half the width and height to center it
 view_xview[0]=x-(view_wview[0]/2);
 view_yview[0]=y-(view_hview[0]/2);
+
+
 </string>
           </argument>
         </arguments>
@@ -154,7 +215,72 @@ if keyboard_check_pressed(ord("L"))
 {
     window_set_size(800, 1280);
 }
-
+if keyboard_check_pressed(ord("O"))
+{
+    instance_create(x,y,debug_controller);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_slime_g">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///col enemy
+if inv_frames = false
+{
+    inv_frames = true;
+    hp -= 10
+    alarm[1]=30
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="50">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(!attack)
+{
+    attack=true;
+    alarm[0]=attack_speed
+    var shot_count;
+    repeat(proj_count){
+    shot_count = instance_create(x,y,obj_fire);
+    shot_count.direction = image_angle + random(8 * proj_count * 2) - 8 * proj_count;
+    shot_count.speed = 2;
+    }
+}
 </string>
           </argument>
         </arguments>

@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>gold = 0;
-window_set_size(640, 480);
+window_set_size(1920, 1080);
 </string>
           </argument>
         </arguments>
@@ -51,7 +51,7 @@ window_set_size(640, 480);
             <kind>1</kind>
             <string>if keyboard_check_pressed(ord("L"))
 {
-    window_set_size(640, 480);
+    window_set_size(1920, 1080);
 }
 
 </string>
@@ -59,7 +59,7 @@ window_set_size(640, 480);
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -79,7 +79,7 @@ window_set_size(640, 480);
             <string>///Draw
 
 draw_set_colour(c_black);
-draw_text(view_xview[0]+10, view_yview[0]+100, "Gold: "+string(global.gold));
+draw_text(view_xview[0]+10, view_yview[0]+100, "Gold: "+string(Global.gold));
 
 </string>
           </argument>

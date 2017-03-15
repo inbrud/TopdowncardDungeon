@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_bop</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Mobs">
       <sprite>sprites\spr_slime_g</sprite>
@@ -19,16 +21,51 @@
       <sprites name="Walls">
         <sprite>sprites\spr_wall_d</sprite>
       </sprites>
+      <sprites name="Floor">
+        <sprite>sprites\spr_grass</sprite>
+      </sprites>
+      <sprites name="Furniture">
+        <sprite>sprites\spr_counter</sprite>
+      </sprites>
     </sprites>
     <sprites name="Treasures">
       <sprite>sprites\spr_chest1</sprite>
+      <sprite>sprites\spr_goldbag</sprite>
+      <sprite>sprites\spr_gold</sprite>
+      <sprite>sprites\spr_focus_icon</sprite>
     </sprites>
     <sprites name="UI">
       <sprite>sprites\spr_UI_heart</sprite>
+      <sprite>sprites\spr_UI_healthbar</sprite>
+      <sprite>sprites\spr_UI_bgtopleft</sprite>
+      <sprite>sprites\spr_UI_healthbarinner</sprite>
+      <sprite>sprites\spr_UI_healthbarborder</sprite>
+      <sprites name="Store">
+        <sprite>sprites\spr_storeback</sprite>
+        <sprite>sprites\spr_iconbox</sprite>
+        <sprite>sprites\spr_buybutton</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Classes">
+      <sprites name="Mage">
+        <sprites name="Abilities">
+          <sprite>sprites\spr_fire</sprite>
+        </sprites>
+      </sprites>
+    </sprites>
+    <sprites name="Npc">
+      <sprite>sprites\spr_shopkeeper</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_aggro.gml</script>
+    <script>scripts\scr_itemarray.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\font_debug</font>
+  </fonts>
   <objects name="objects">
     <objects name="Player">
       <object>objects\obj_player</object>
@@ -37,9 +74,24 @@
       <objects name="Wall">
         <object>objects\obj_wall_d</object>
       </objects>
+      <objects name="Floor">
+        <object>objects\obj_grass</object>
+      </objects>
     </objects>
     <objects name="Enemy">
       <object>objects\obj_slime_g</object>
+    </objects>
+    <object>objects\obj_fire</object>
+    <objects name="Controllers">
+      <object>objects\cont_main</object>
+      <object>objects\enemymod_controller</object>
+      <object>objects\debug_controller</object>
+      <object>objects\Inventory_array</object>
+    </objects>
+    <object>objects\obj_gold</object>
+    <object>objects\obj_counter</object>
+    <objects name="NPC">
+      <object>objects\obj_shopkeeper</object>
     </objects>
   </objects>
   <rooms name="rooms">
