@@ -24,11 +24,15 @@
       <sprites name="Floor">
         <sprite>sprites\spr_grass</sprite>
       </sprites>
+      <sprites name="Furniture">
+        <sprite>sprites\spr_counter</sprite>
+      </sprites>
     </sprites>
     <sprites name="Treasures">
       <sprite>sprites\spr_chest1</sprite>
       <sprite>sprites\spr_goldbag</sprite>
       <sprite>sprites\spr_gold</sprite>
+      <sprite>sprites\spr_focus_icon</sprite>
     </sprites>
     <sprites name="UI">
       <sprite>sprites\spr_UI_heart</sprite>
@@ -36,6 +40,11 @@
       <sprite>sprites\spr_UI_bgtopleft</sprite>
       <sprite>sprites\spr_UI_healthbarinner</sprite>
       <sprite>sprites\spr_UI_healthbarborder</sprite>
+      <sprites name="Store">
+        <sprite>sprites\spr_storeback</sprite>
+        <sprite>sprites\spr_iconbox</sprite>
+        <sprite>sprites\spr_buybutton</sprite>
+      </sprites>
     </sprites>
     <sprites name="Classes">
       <sprites name="Mage">
@@ -44,11 +53,15 @@
         </sprites>
       </sprites>
     </sprites>
+    <sprites name="Npc">
+      <sprite>sprites\spr_shopkeeper</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_aggro.gml</script>
+    <script>scripts\scr_itemarray.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_debug</font>
@@ -73,8 +86,13 @@
       <object>objects\cont_main</object>
       <object>objects\enemymod_controller</object>
       <object>objects\debug_controller</object>
+      <object>objects\Inventory_array</object>
     </objects>
     <object>objects\obj_gold</object>
+    <object>objects\obj_counter</object>
+    <objects name="NPC">
+      <object>objects\obj_shopkeeper</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_sample</room>
