@@ -35,6 +35,9 @@ inv_frames = false;
 attack_speed = 50;
 experience = 0;
 
+//unique stats
+proj_count = 1;
+
 ///movement variables
 hsp = 0;
 vsp = 0;
@@ -42,7 +45,6 @@ movespeed = 3;
 
 
 //inventory
-
 gold = 0;
 
 view_visible[0]=true; //make view visible
@@ -213,7 +215,7 @@ if keyboard_check_pressed(ord("L"))
 {
     window_set_size(800, 1280);
 }
-if keyboard_check(ord("O"))
+if keyboard_check_pressed(ord("O"))
 {
     instance_create(x,y,debug_controller);
 }
@@ -272,7 +274,12 @@ if inv_frames = false
 {
     attack=true;
     alarm[0]=attack_speed
-    instance_create(x,y,obj_fire);
+    var shot_count;
+    repeat(proj_count){
+    shot_count = instance_create(x,y,obj_fire);
+    shot_count.direction = image_angle + random(8 * proj_count * 2) - 8 * proj_count;
+    shot_count.speed = 2;
+    }
 }
 </string>
           </argument>
