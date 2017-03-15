@@ -28,14 +28,15 @@
             <string>///Draw UI
 
 //Draw BG
-draw_sprite(spr_UI_bgtopleft,1,1,1);
+
 draw_sprite(spr_UI_healthbar,1,46,34);
 draw_sprite_ext(spr_UI_healthbarinner,1,46,34,obj_player.hp/100,1,0,c_white,1);
 draw_sprite(spr_UI_healthbarborder,1,15,15);
-draw_sprite(spr_goldbag,1,270,20);
+draw_sprite(spr_goldbag,1,240,40);
 
 //Draw Text
-draw_text(285,13,"x");
+draw_text(250,33,"x");
+draw_text(261,34.3,obj_player.gold);
 </string>
           </argument>
         </arguments>
