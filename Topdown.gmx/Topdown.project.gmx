@@ -6,6 +6,7 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_bop</sound>
+    <sound>sound\snd_YEET</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Mobs">
@@ -95,7 +96,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_sample</room>
+    <room>rooms\room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
