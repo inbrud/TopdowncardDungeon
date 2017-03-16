@@ -32,11 +32,11 @@ attack = false;
 hp = 100;
 inv_frames = false;
 //Player stats
-attack_speed = 5;
+attack_speed = 50;
 experience = 0;
 
 //unique stats
-proj_count = 20;
+proj_count = 1;
 
 ///movement variables
 hsp = 0;
@@ -275,9 +275,9 @@ if inv_frames = false
     attack=true;
     alarm[0]=attack_speed
     var shot_count;
+    audio_play_sound(snd_YEET, 10, false)
     repeat(proj_count){
     shot_count = instance_create(x,y,obj_fire);
-    audio_play_sound(snd_YEET, 10, false)
     shot_count.direction = image_angle + random(8 * proj_count * 2) - 8 * proj_count;
     shot_count.speed = 5;
     }
