@@ -3,7 +3,7 @@
   <spriteName>spr_counter</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-15</depth>
   <persistent>0</persistent>
   <parentName>obj_wall_d</parentName>
   <maskName>&lt;undefined&gt;</maskName>
