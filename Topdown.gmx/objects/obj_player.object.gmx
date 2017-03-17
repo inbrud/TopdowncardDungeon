@@ -36,7 +36,11 @@ attack_speed = 50;
 experience = 0;
 
 //unique stats
+<<<<<<< HEAD
 proj_count = 2000;
+=======
+proj_count = 1;
+>>>>>>> origin/Muriel_test
 
 ///movement variables
 hsp = 0;
@@ -277,7 +281,11 @@ if inv_frames = false
     audio_play_sound(snd_YEET, 10, false)
     repeat(proj_count){
     shot_count = instance_create(x,y,obj_fire);
+<<<<<<< HEAD
     shot_count.direction = point_direction(x, y, mouse_x, mouse_y) + random(8 * proj_count * 2) - 8 * proj_count;
+=======
+    shot_count.direction = image_angle + random(8 * proj_count * 2) - 8 * proj_count;
+>>>>>>> origin/Muriel_test
     shot_count.speed = 5;
     }
 }
